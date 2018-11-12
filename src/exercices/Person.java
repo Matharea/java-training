@@ -6,7 +6,7 @@ public class Person {
     private int age;
     private boolean wilder;
 
-    public Constructor(String name, int age){
+    public Person(String name, int age){
         this.name = name;
         this.age = age;
     }
@@ -23,11 +23,11 @@ public class Person {
         return age;
     }
 
-    public void setAge(String age){
+    public void setAge(int age){
         this.age = age;
     }
 
-    public boolean getWilder(){
+    public boolean isWilder(){
         return wilder;
     }
 
@@ -35,9 +35,8 @@ public class Person {
         this.wilder = wilder;
     }
 
-    public whoAmI(String name, int age){
-        Constructor(name, age);
-        return "My name is " + this.name + " and i'm " + this.age;
+    public String whoAmI(){
+        return "My name is " + this.name + " and I'm " + this.age;
     }
 
     public Person() {
